@@ -1,6 +1,5 @@
-
 (function (global) {
-  var choco = function( selector ) {
+  global.$C = function( selector ) {
     return new ChocolateJS( selector );
   }
 
@@ -41,5 +40,4 @@
       }
       return this;
     };
-  global.ChocolateJS = window.$C = choco;
 })(window);
